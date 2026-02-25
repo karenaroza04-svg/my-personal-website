@@ -1,0 +1,104 @@
+/* Change body background */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navbar logo round */
+.navbar-brand img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Carousel image height */
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    font-size: 14px;
+}
+
+/* About box: ensure stacked layout and spacing */
+.about-box {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Reduce carousel height on mobile */
+  .carousel-item img {
+    height: 40vh;
+  }
+
+  /* Reduce padding for headings */
+  .container h1, .container h2 {
+    padding: 1rem 0;
+    margin: 1rem 0 !important;
+  }
+
+  /* Reduce padding for about boxes */
+  .bg-secondary, .bg-dark-subtle {
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+  }
+
+  /* Adjust navbar logo size */
+  .navbar-brand img {
+    width: 50px;
+    height: 37px;
+  }
+
+  /* Reduce font sizes */
+  body {
+    font-size: 14px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .container h2 {
+    font-size: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+  /* Make cards stack with spacing on very small screens */
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Force about boxes to stack on very small screens */
+@media (max-width: 576px) {
+  .about-box {
+    width: 100% !important;
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Ensure column wrappers are full-width */
+  .row > .col-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
